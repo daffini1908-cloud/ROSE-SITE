@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Are you happy with me?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="scene">
+    <div class="background-layer"></div>
+    <div class="petals-layer" aria-hidden="true"></div>
+    <div class="particles-layer" aria-hidden="true"></div>
+    <div class="rose-corner top-left"></div>
+    <div class="rose-corner top-right"></div>
+    <div class="rose-corner bottom-left"></div>
+    <div class="rose-corner bottom-right"></div>
+
+    <main class="page main-screen active" id="mainScreen">
+      <div class="hero-copy">
+        <p class="intro">A question in crimson light</p>
+        <h1>Are you happy with me?</h1>
+        <div class="button-row">
+          <button class="action-btn yes-btn" id="yesBtn">YES</button>
+          <button class="action-btn no-btn" id="noBtn">NO</button>
+        </div>
+        <p class="hint">Let the rose-lit truth unfold.</p>
+      </div>
+      <div class="status-messages" id="messageContainer"></div>
+      <div class="audio-toggle">
+        <button id="musicToggle" class="music-btn" type="button">Play soft music</button>
+      </div>
+    </main>
+
+    <main class="page second-screen" id="secondScreen">
+      <div class="romantic-stage">
+        <div class="screen-title" id="screenTitle">Finallyyyy ❤️</div>
+        <div class="screen-subtitle" id="screenSubtitle">Yeah, I’m happy with you too.</div>
+      </div>
+      <div class="floating-rose"></div>
+      <div class="floating-heart"></div>
+      <div class="flower-trail"></div>
+    </main>
+  </div>
+
+  <audio id="bgMusic" loop muted preload="auto">
+    <!-- Optional: Add a soft ambient audio source here. Example:
+    <source src="audio/soft-rose-ambient.mp3" type="audio/mpeg" /> -->
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
